@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduaksi Video Downloader & AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container" id="page-login">
+        <h1>📥 Eduaksi Downloader</h1>
+        <p class="brand">AI Video Tools & Downloader</p>
+        
+        <div class="login-box">
+            <h3>Silakan Masuk Terlebih Dahulu:</h3>
+            <button class="btn-login google" onclick="masukAplikasi('Google')">
+                <img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png" alt="Google"> Masuk dengan Google
+            </button>
+            <button class="btn-login apple" onclick="masukAplikasi('Apple')">
+                <img src="https://cdn-icons-png.flaticon.com/512/0/747.png" alt="Apple"> Masuk dengan Apple
+            </button>
+        </div>
+    </div>
+
+    <div class="container d-none" id="page-utama">
+        <div class="profile-area">
+            <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Eduaksi" alt="Avatar" class="avatar">
+            <h2 id="nama-user">Halo, Kreator Eduaksi!</h2>
+            <span class="badge-status">Akun Premium</span>
+        </div>
+
+        <div class="input-area">
+            <label for="link-video">Silakan tempel link-nya di sini:</label>
+            <input type="text" id="link-video" placeholder="Tempel link YouTube / IG / TikTok...">
+            <button class="btn-proses" onclick="prosesLink()">💥 Proses Video</button>
+        </div>
+
+        <div class="menu-fitur">
+            <button class="btn-nav active" onclick="bukaFitur(1)">📋 Fitur 1: Downloader</button>
+            <button class="btn-nav" onclick="bukaFitur(2)">🤖 Fitur 2: AI Summary & Prompt</button>
+        </div>
+
+        <div id="konten-fitur">
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
